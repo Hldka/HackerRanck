@@ -13,5 +13,3 @@ public class endoffile {
         scan.close();
     }
 }
-/*fatma bizim kiymetlimiz cok sanslisin , ne düsünüyosun falan
-* */
