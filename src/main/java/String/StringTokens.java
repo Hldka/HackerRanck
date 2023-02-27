@@ -6,15 +6,20 @@ public class StringTokens {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
-        String [] str=s.split("[^a-zA-Z]+");
+        s=s.trim();
+        if (s.length()==0){
+            System.out.println(0);
+            return;
+        }
 
-        int counter=0;
-        for (int i=0;i< str.length-1;i++){
+        String [] str=s.split("[^a-zA-Z]+");
+        System.out.println(str.length);
+        for (int i=0;i< str.length;i++){
 
             System.out.println(str[i]);
-            counter++;
+
         }
-        System.out.println(counter);
+
         // Write your code here.
         scan.close();
     }
