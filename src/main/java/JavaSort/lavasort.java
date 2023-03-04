@@ -18,6 +18,14 @@ public class lavasort { public static void main(String[] args){
         studentList.add(st);
 
         testCases--;
+        studentList.sort(new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                if (o1.getCgpa()==o2.getCgpa()){return  o1.getFname().compareTo(o2.getFname());}
+                else if (o1.getCgpa()< o2.getCgpa()){return 1;}else {return -1;}
+
+            }
+        });
     }
 
     for(Student st: studentList){
