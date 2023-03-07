@@ -1,9 +1,11 @@
 package lamdaexpressions;
 
-class MyMath {/*
+class MyMath {
+    /*
     public static boolean checker(PerformOperation p, int num) {
-        return p.check(num);
+        return p.check;
     }
+    class PerformOperation{
     public PerformOperation isOdd() {
         return (a) -> {
             return (a % 2 == 1);
@@ -27,8 +29,11 @@ class MyMath {/*
                 n /= 10;
             }
             return (rev == a);
-        };
+        };}
     }
-    */
 
+    public static void main(String[] args) {
+        System.out.println(checker(5,0));
+    }
+*/
 }
