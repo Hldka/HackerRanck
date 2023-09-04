@@ -9,4 +9,13 @@ class MyMath {
     public static boolean checker(PerformOperation p, int num) {
         return p.check(num);
     }
+
+    public PerformOperation isOdd() {
+    }
+
+    public PerformOperation isPrime() {
+    }
+
+    public PerformOperation isPalindrome() {
+    }
 }

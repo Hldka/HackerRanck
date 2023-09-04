@@ -3,6 +3,7 @@ package lambdaexpression;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class Solution { public static void main(String[] args) throws IOException {
@@ -33,5 +34,34 @@ public class Solution { public static void main(String[] args) throws IOExceptio
         }
         System.out.println(ans);
     }
+
 }
+    PerformOperation isOdd(){
+        PerformOperation po=(int a)->a%2==0 ? false :true;
+        return po;
+    }
+    PerformOperation isPrime(){
+        PerformOperation po=(int a)->{
+            if (a==1)return true;
+            else {
+                for (int i =2; i<Math.sqrt(a);i++)
+                    if (a%i==0)return false;
+                return true;
+            }
+        };
+        return po;
+    }
+    PerformOperation isPalindrome(){
+        ArrayList<Integer> aa=new ArrayList<>();
+        PerformOperation po=(int a)->
+        {
+            String str= Integer.toString(a);
+            String reverse="";
+            for (int i=str.length()-1;i>0;i--){
+                reverse=reverse+str.charAt(i);
+            }if (reverse.equals(str) )return true;
+            return false;
+        };
+        return po;
+    }
 }
