@@ -10,4 +10,15 @@ class MyMath {
         return p.check(num);
     }
 
+    public PerformOperation isOdd() {
+        return isOdd();
+    }
+
+    public PerformOperation isPrime() {
+       return isPrime();
+    }
+
+    public PerformOperation isPalindrome() {
+        return  isPalindrome();
+    }
 }
